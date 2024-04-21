@@ -5,7 +5,7 @@
     <title>Meeting minutes</title>
     <link rel="icon" type="image/png" href="clock.png">
     <style>
-        body {
+        body {/*adding background for the whole website*/
             background-image: url('pokemonlogo.png');
             background-size: cover;
             background-attachment: fixed;
@@ -14,22 +14,69 @@
             font-family: Arial, sans-serif;
             color: #333;
         }
+        .rgb{
+            background-color: rgb(255, 0, 0);
+        }
+
+        .hexcode{
+            background-color:#FFFAAA;
+        }
+        .usehsl{
+            background-color: hsl(150, 100%, 50%);
+        }
+        .colorname{
+            background-color: orange;
+        }
+        .widergamut{
+            background-color: color(xyz 0.3 0.6 0.1);
+        }
+        .widergamutmix{
+            background-color: color-mix(in srgb, red 20%, yellow 50%);
+        }
+        :root{
+            --primary-color: violet;
+        }
+        .fallbackcolor{
+            background-color: var(--primary-color, pink);
+        }
+        .absolute1{
+            width: 10cm
+        }
+        .absolute2{
+            width: 50mm
+        }
+        .absolute3{
+            width: 1in
+        }
+        .relative1{
+            font-size: 2vw
+        }
+        .relative2{
+            font-size:2vh
+        }
+        .relative3{
+            padding: 0.4rem;
+        }
+        .wrap{
+            font-size: 1.5em;
+        }
+        
     </style>
 </head>
 <body>
     <header>
-        <h1>First time pokemon training</h1>
-        <h2>Lesson 1: Catching a water type pokemon </h2>
-        <h3>Date: 4/11/2072</h3>
+        <h1 class="rgb absolute1 " >First time pokemon training</h1>
+        <h2 class="hexcode absolute2  ">Lesson 1: Catching a water type pokemon </h2>
+        <h3 class="usehsl absolute3  ">Date: 4/11/2072</h3>
     </header>
     <hr>
-    <div>
+    <div class="wrap">
         <nav>
             <ol>
-                <li><a href="#agenda">Go To Agenda </a></li>
-                <li><a href="#Section1">Go To Section 1 </a></li>
-                <li><a href="#Section2">Go To Section 2 </a></li>
-                <li><a href="#Section3">Go To Section 3 </a></li>
+                <li><a href="#agenda" class="colorname relative1">Go To Agenda </a></li>
+                <li><a href="#Section1" class="widergamut relative2">Go To Section 1 </a></li>
+                <li><a href="#Section2" class="fallbackcolor relative3">Go To Section 2 </a></li>
+                <li><a href="#Section3"class="rgb">Go To Section 3 </a></li>
             </ol>
         </nav>
     </div>
@@ -52,7 +99,7 @@
         </section>
         <hr>
         <section id="Section1">
-            <h3>Section 1: Which pokemon should we catch</h3>
+            <h3 class="widergamutmix">Section 1: Which pokemon should we catch</h3>
             <ul>
                 <li>Start with Magikarp. They are useless until they change into Gyrados. But they are good for the beginners</li>
                 <li> Here is a Magikarp and you can also see how it sounds:</li>
