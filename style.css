@@ -1,0 +1,264 @@
+body {/*adding background for the whole website*/
+    background-image: url('pokemonlogo.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+p{
+    color: darkcyan;
+    font-family: cursive;
+}
+.rgb{
+    background-color: rgb(255, 0, 0);
+}
+
+.hexcode{
+    background-color:#FFFAAA;
+}
+.usehsl{
+    background-color: hsl(150, 100%, 50%);
+}
+.colorname{
+    background-color: orange;
+}
+.widergamut{
+    background-color: color(xyz 0.3 0.6 0.1);
+}
+.widergamutmix{
+    background-color: color-mix(in srgb, red 20%, yellow 50%);
+}
+:root{
+    --primary-color: violet;
+}
+.fallbackcolor{
+    background-color: var(--primary-color, pink);
+}
+.absolute1{
+    width: 10cm
+}
+.absolute2{
+    width: 50mm
+}
+.absolute3{
+    width: 1in;
+    height: auto;
+}
+.relative1{
+    font-size: 2vw
+}
+.relative2{
+    font-size:2vh
+}
+.relative3{
+    padding: 0.4rem;
+}
+div.wrap{
+    font-size: 1.5em;
+}
+
+.marginelement{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-left: 200px;
+    margin-right: 20px;
+}
+.marginelementshort{
+    margin: 30px 30px 30px 30px;
+}
+.paddinglong{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.paddingshort{
+    padding: 30px 30px 30px 30px;
+}
+.marginauto{
+margin: auto;
+}
+.borders{
+border-style: ridge;
+border-color: green;
+border-width: thick;
+border-radius: 20%;
+}
+.changetext{
+color: darkblue;
+text-decoration: dashed;/*This didn't happen*/
+text-align: center;
+}
+.usediplay{/*TO DO*/
+display: block;
+}
+.usediplay_inline{
+width: 200px;
+height: 200px;
+display: inline-block;
+}
+.sidebar{
+width: 16px;
+min-width: none;
+max-width: fit-content;
+}
+#position1{
+border: 2px darkblue;
+height: 100px;
+width: 150px;
+background-color: green;
+position: sticky;
+top: 200px;        
+
+}
+#position2{
+border: 1px darkblue;
+height: 100px;
+width: 150px;
+background-color: yellow;
+position: relative;
+
+}
+a:active{
+background-color: red;
+}
+button:hover{
+background-color: aqua;
+}
+
+@media screen and (max-width: 450px) {
+
+body {
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+label, input, select, textarea {
+    font-size: 14px;
+}
+
+input[type="text"], input[type="date"], select, textarea {
+    padding: 8px;
+}
+fieldset > * {
+    margin-bottom: 16px;
+}
+.sidebar {
+    width: auto;
+    max-width: 100%;
+}
+#position1{
+    position: fixed;
+}
+#position2{
+    position: fixed;
+}
+}
+@media screen and (min-width: 768) and (max-width:1024px){
+body {
+    font-size: 16px;
+}
+h1{
+    font-size: 2rem;
+}
+h2{
+    font-size: 1.5rem;
+}
+h3{
+    font-size: 1.2rem;
+}
+img, video{
+    max-width: 100%;
+    height: auto;
+}
+form{
+    max-width: 80%;
+    margin: 0 auto
+}
+label, input, select, textarea{
+    font-size: 16px;
+}
+input[type="text"], input[type="date"], select, textarea{
+    padding:12px;
+}
+fieldset > *{
+    margin-bottom: auto;
+}
+#position1{
+    position: fixed;
+}
+#position2{
+    position: fixed;
+}
+}
+.flex_container {
+display: flex;
+justify-content: space-evenly;
+}
+.flex-item {
+background-color: #f2f2f2;
+padding: 20px;
+margin: 10px;
+text-align: center;
+flex-basis: 200px; 
+}
+
+.grid-container {
+display: grid;
+grid-template-columns: repeat(3, 1fr); 
+grid-gap: 10px; 
+}
+
+.grid-item {
+background-color: #e6e6e6;
+padding: 20px;
+text-align: center;
+}
+[href="https://www.pokemon.com/us/pokedex/squirtle"]{
+    padding: 5px 10px;
+}
+p:hover{
+    font-style: italic;
+}
+.usedescendents ul li{
+    font-style: oblique;
+}
+.childcombinator > li{
+    background-color: peru;
+}
+.sibling h3 ~ ul{
+    font-weight: bolder;
+}
+h3+label{
+    font-size: x-large;
+}
+ul .modify{
+    color: #ababab;
+    font-weight: lighter;
+}
+nav:has(~ ol){
+                
+    font-stretch: expanded;
+}
+
+
