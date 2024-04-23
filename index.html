@@ -4,89 +4,47 @@
     <meta charset="UTF-8"> 
     <title>Meeting minutes</title>
     <link rel="icon" type="image/png" href="clock.png">
-
-    <style>
-        body {/*adding background for the whole website*/
-            background-image: url('pokemonlogo.png');
-            background-size: cover;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            background-position: center;
-            font-family: Arial, sans-serif;
-            color: #333;
-        }
-        .rgb{
-            background-color: rgb(255, 0, 0);
-        }
-
-        .hexcode{
-            background-color:#FFFAAA;
-        }
-        .usehsl{
-            background-color: hsl(150, 100%, 50%);
-        }
-        .colorname{
-            background-color: orange;
-        }
-        .widergamut{
-            background-color: color(xyz 0.3 0.6 0.1);
-        }
-        .widergamutmix{
-            background-color: color-mix(in srgb, red 20%, yellow 50%);
-        }
-        :root{
-            --primary-color: violet;
-        }
-        .fallbackcolor{
-            background-color: var(--primary-color, pink);
-        }
-        .absolute1{
-            width: 10cm
-        }
-        .absolute2{
-            width: 50mm
-        }
-        .absolute3{
-            width: 1in
-        }
-        .relative1{
-            font-size: 2vw
-        }
-        .relative2{
-            font-size:2vh
-        }
-        .relative3{
-            padding: 0.4rem;
-        }
-        .wrap{
-            font-size: 1.5em;
-        }
-        
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
     <header>
-        <h1 class="rgb absolute1 " >First time pokemon training</h1>
-        <h2 class="hexcode absolute2  ">Lesson 1: Catching a water type pokemon </h2>
-        <h3 class="usehsl absolute3  ">Date: 4/11/2072</h3>
+        <h1 class="rgb absolute1 marginelement" >First time pokemon training</h1>
+        <h2 class="hexcode absolute2  marginelementshort">Lesson 1: Catching a water type pokemon </h2>
+        <h3 class="usehsl absolute3  paddinglong">Date: 4/11/2072</h3>
     </header>
     <hr>
-    <div class="wrap">
+    <div class="wrap sizing sidebar">
         <nav>
             <ol>
-                <li><a href="#agenda" class="colorname relative1">Go To Agenda </a></li>
-                <li><a href="#Section1" class="widergamut relative2">Go To Section 1 </a></li>
+                <li><a href="#agenda" class="colorname relative1 paddingshort usediplay">Go To Agenda </a></li>
+                <li><a href="#Section1" class="widergamut relative2 marginauto">Go To Section 1 </a></li>
                 <li><a href="#Section2" class="fallbackcolor relative3">Go To Section 2 </a></li>
-                <li><a href="#Section3"class="rgb">Go To Section 3 </a></li>
+                <li><a href="#Section3" class="rgb">Go To Section 3 </a></li>
             </ol>
         </nav>
+    </div>
+    <div class="flex_container">
+        <div class="flex-item">Pikachu</div>
+        <div class="flex-item">Chicorita</div>
+        <div class="flex-item">Snorlex</div>
+        <div class="flex-item">Balbasor</div>
+    </div>
+    
+    <div class="grid-container">
+       <div class="grid-item">Blastoise</div>
+       <div class="grid-item">Charizard</div>
+       <div class="grid-item">Venusaur</div>
+       <div class="grid-item">Raichu</div>
+       <div class="grid-item">Alakazaam</div>
+       <div class="grid-item">Gengar</div>
     </div>
     <hr>
     <main>
         <section>
-            <h3>Attendance list</h3>
-            <ul>
+            <h3 >Attendance list</h3>
+            <ul class="usediplay">
                 <li>Team Rocket</li>
                 <li>Garry</li>
                 <li>Brock</li>
@@ -94,39 +52,41 @@
             </ul>
         </section>
         <hr>
-        <section id="agenda">
-            <p>AGENDA: Today, we will learn how to catch a water type pokemon to prepare for the championship
+        <section >
+            <p class="changetext">AGENDA: Today, we will learn how to catch a water type pokemon to prepare for the championship
             We will start by learning which one is easier to catch for beginners and <br>
             Then we will learn what pokemons are powerful against water type. At the end we will learn how to make it powerful.</p>
         </section>
         <hr>
         <section id="Section1">
-            <h3 class="widergamutmix">Section 1: Which pokemon should we catch</h3>
-            <ul>
-                <li>Start with Magikarp. They are useless until they change into Gyrados. But they are good for the beginners</li>
-                <li> Here is a Magikarp and you can also see how it sounds:</li>
-                <li><img src="magikarp.jpg" alt="Sample Magikarp" width="100" height="100"></li>    
-                <li><audio controls>
-                    <source src="magikarp-voicesound-36098.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
-                </li>
-                <li> Or you can start with a Squirtle. <strong>Only if you think you can handle.</strong> They are cute but powerful</li>
-                <li> Here is a Squirtle and you can see how it sounds:</li>
-                <li>
-                <img src="squirtle.png" alt="Sample Squirtle" width="100" height="100"></li>
-                <li>
-                <audio controls>
-                    <source src="squirtle-101soundboards.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
-                </li>
-            </ul>    
+            <h3 class="widergamutmix borders">Section 1: Which pokemon should we catch</h3>
+            <div class = "usedescendents">
+                <ul>
+                    <li>Start with Magikarp. They are useless until they change into Gyrados. But they are good for the beginners</li>
+                    <li> Here is a Magikarp and you can also see how it sounds:</li>
+                    <li><img src="magikarp.jpg" alt="Sample Magikarp" width="100" height="100" class="usediplay_inline"></li>    
+                    <li><audio controls>
+                        <source src="magikarp-voicesound-36098.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    </li>
+                    <li> Or you can start with a Squirtle. <strong>Only if you think you can handle.<a href="https://www.pokemon.com/us/pokedex/squirtle">Squirtle's data</a></strong> They are cute but powerful</li>
+                    <li> Here is a Squirtle and you can see how it sounds:</li>
+                    <li>
+                    <img src="squirtle.png" alt="Sample Squirtle" width="100" height="100"></li>
+                    <li>
+                    <audio controls>
+                        <source src="squirtle-101soundboards.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    </li>
+                </ul>  
+              </div>   
         </section>  
         <hr>
         <section id="Section2">
-            <h3>Section 2: Pokemon selection</h3>
-            <ul>
+            <h3 >Section 2: Pokemon selection</h3>
+            <ul class="childcombinator">
                 <li><i>Always Use an Electric or a Grass type pokemon.</i> Some pokemons you can use are: Pikachu, Bulbasaur. 
                     <details>
                         <summary>Click on the small arrow to the left to see a picture of cute looking dangerous pikachu</summary>
@@ -139,20 +99,25 @@
         </section>
         <hr>
         <section id="Section3">
+            <div class="sibling">
             <h3>Section 3: Strengthening the Pokemon</h3>
-            <ul>
-                <li><em>Have them fight with one another every day but make sure that they get enough food and they are fighting with someone stronger </em></li>
-                <li> This way they will gain more power and will be able to transform quickly into a powerful version, which is important for the tournament</li>
-                <li>A Magikarp is not a pokemon that will easily evolve into Gyarados easily. But, Squirtle will evolve into stage 2 and Stage 3 with a lot of training.</li>
-                <li>Here is a common water pokemon attack <b>Watergun</b></li>
-                <li>
-                    <video width="500" height="500" controls>
-                        <source src="watergun.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </li>
-            </ul>
-        </section>   
+                <ul>
+                    <li><em>Have them fight with one another every day but make sure that they get enough food and they are fighting with someone stronger </em></li>
+                    <li class="modify"> This way they will gain more power and will be able to transform quickly into a powerful version, which is important for the tournament</li>
+                    <li class="modify">A Magikarp is not a pokemon that will easily evolve into Gyarados easily. But, Squirtle will evolve into stage 2 and Stage 3 with a lot of training.</li>
+                    <li>Here is a common water pokemon attack <b>Watergun</b></li>
+                    <li>
+                        <video width="500" height="500" controls>
+                            <source src="watergun.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        
+        <div id="position1"></div>
+            <div id="position2"></div>  
         <h2>Here is a form to fill out about your personal experience with pokemons</h2>
         <form>
             <fieldset>
@@ -235,6 +200,7 @@
             <input type="submit" name="SubmitForm">
         </form>
         <hr>
+        
     </main>
     <footer>
         <h3>Absence list</h3>
