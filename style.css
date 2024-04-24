@@ -99,11 +99,7 @@ width: 200px;
 height: 200px;
 display: inline-block;
 }
-.sidebar{
-width: 16px;
-min-width: none;
-max-width: fit-content;
-}
+
 #position1{
 border: 2px darkblue;
 height: 100px;
@@ -259,5 +255,13 @@ ul .modify{
 nav:has(~ ol){
     font-stretch: expanded;
 }
-
-
+.nestedselector{
+    font-size: 10px;
+    & > a{
+        color: #acbbca;
+        &:hover,
+        &:focus{
+            background-color: #FFFAAA;
+        }
+    }
+}
