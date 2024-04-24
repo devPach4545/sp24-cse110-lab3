@@ -9,7 +9,7 @@ body {/*adding background for the whole website*/
 }
 p{
     color: darkcyan;
-    font-family: cursive;
+    font-family: "Jersey 10";
 }
 .rgb{
     background-color: rgb(255, 0, 0);
